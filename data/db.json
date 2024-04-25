@@ -1,0 +1,28 @@
+{
+    "careers": [
+        {
+            "id": 1,
+            "title": "Senior React Developer",
+            "Salary": 100000,
+            "location": "Lahore, Punjab, Pakistan"
+        },
+        {
+            "id": 2,
+            "title": "Senior Java Developer",
+            "Salary": 100000,
+            "location": "Karachi, Sindh, Pakistan"
+        },
+        {
+            "id": 3,
+            "title": "UI/UX Designer",
+            "Salary": 50000,
+            "location": "Islamabad, Pakistan"
+        },
+        {
+            "id": 4,
+            "title": "Vue Developer",
+            "Salary": 70000,
+            "location": "Lahore, Punjab, Pakistan"
+        }
+    ]
+}

@@ -12,6 +12,9 @@ import { Faq } from './pages/help/Faq'
 import RootLayout from './layouts/RootLayout'
 import { HelpLayout } from './layouts/HelpLayout'
 import { NotFound } from './pages/NotFound'
+import { CareersLayout } from './layouts/CareersLayout'
+import { Careers } from './pages/careers/Careers'
+import { careersLoader } from './pages/careers/Careers'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,6 +25,10 @@ const router = createBrowserRouter(
         <Route path="faq" element={<Faq />} />
         <Route path="contact" element={<Contact />} />
       </Route>
+      <Route path="careers" element={<CareersLayout />}>
+        <Route index element={<Careers />} loader={careersLoader} />
+      </Route>
+
       <Route path="*" element={<NotFound />} />
     </Route>
   )
