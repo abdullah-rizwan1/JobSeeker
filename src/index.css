@@ -96,13 +96,16 @@ form {
   margin-top: 30px;
 }
 
-form input, form label span, form textarea {
-  margin-bottom: 30px;
+form input span, form textarea {
   padding: 8px;
   border-radius: 4px;
   border: 0;
   width: 300px;
-  color: var(--secondary);
+  color: #2b3452;
+}
+
+form label {
+  color: #ddd;
 }
 
 form label span {
@@ -138,4 +141,28 @@ form label span {
   padding: 20px;
   border-radius: 4px;
   margin: 20px 0;
+}
+
+.breadcrumbs {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+
+.breadcrumbs > * {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.breadcrumbs .crumb:after {
+  content: '>';
+  margin-left: 10px;
+}
+
+.breadcrumbs .crumb:last-child:after {
+  display: none;
+}
+
+.breadcrumbs .crumb a {
+  color: #ddd;
 }
